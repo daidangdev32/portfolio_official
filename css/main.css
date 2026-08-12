@@ -6,7 +6,8 @@
 :root{
   --paper: #F4F2ED;
   --ink: #0A0A0A;
-  --dd-accent: #C2410C;            /* signal accent — carets, bars, marks, nav */
+  --dd-accent: #2222DD;            /* signal accent — carets, bars, marks, nav */
+  --dd-accent-dark: #14147A;       /* dark runner on certified bars */
   --frame-bg: #e9e7e1;             /* image frame fill */
   --font-display: 'Anton', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -163,6 +164,8 @@ body{
 }
 .dd-progress-fill{ position:absolute; top:0; bottom:0; left:0; width:100%; background:var(--dd-accent); }
 .dd-progress-fill--scan{ width:30%; animation:ddscan 1.9s linear infinite; }
+.dd-progress--done{ background:var(--dd-accent); }
+.dd-progress-fill--done{ width:30%; background:var(--dd-accent-dark); animation:ddscan 1.9s linear infinite; }
 .dd-progress--cert{ margin-top:auto; }
 
 /* ---------- shared section furniture ---------- */
